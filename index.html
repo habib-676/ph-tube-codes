@@ -14,11 +14,25 @@
   </head>
   <body>
     <header>
-      <nav class="py-3 border-b-1 w-11/12 mx-auto flex justify-between items-center">
-        <img src="./assets/Logo.png" alt="" />
-        <p>Sort by view</p>
+      <nav
+        class="py-3 border-b-1 w-11/12 mx-auto flex justify-between items-center"
+      >
+        <img class="w-28" src="./assets/Logo.png" alt="" />
+        <button class="btn">Sort by view</button>
         <button class="btn bg-red-700 text-white">Blog</button>
       </nav>
     </header>
+    <main class="my-7 w-11/12 mx-auto">
+      <div
+        id="categories-container"
+        class="flex gap-2 justify-center items-center"
+      >
+        <div><button class="btn btn-sm hover:text-white hover:bg-red-600 rounded-md">All</button></div>
+
+        <!-- buttons will add here dynamically -->
+      </div>
+    </main>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
